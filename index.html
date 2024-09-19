@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro-dos-filmes.html">Cadastrar Filme</a></li>
+                <li><button class="logout-button" onclick="logout()">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Filmes Cadastrados</h2>
+        <table id="moviesTable">
+            <thead>
+                <tr>
+                    <th>Filme</th>
+                    <th>Diretor</th>
+                    <th>Faixa Etária</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>CRUD Filmes © 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
