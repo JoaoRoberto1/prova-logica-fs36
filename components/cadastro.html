@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Filmes</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="cadastro-container">
+        <h2>Cadastro de Filmes</h2>
+        
+        <label for="searchTitle">Buscar Filme (Título):</label>
+        <input type="text" id="searchTitle">
+        <button type="button" onclick="searchMovie()">Buscar</button>
+
+        <form id="cadastroForm">
+            <label for="title">Título do Filme:</label>
+            <input type="text" id="title" required readonly>
+
+            <label for="director">Diretor:</label>
+            <input type="text" id="director" required readonly>
+
+            <label for="rating">Avaliação:</label>
+            <input type="text" id="rating" required readonly>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
