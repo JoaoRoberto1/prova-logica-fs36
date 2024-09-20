@@ -19,10 +19,15 @@
 
     <section class="content">
         <h2>Filmes Cadastrados</h2>
-        <button id="clearTableButton">Limpar Tabela</button> 
 
-        <label for="filterInput">Filtrar por título:</label>
-        <input type="text" id="filterInput" placeholder="Digite o título do filme...">
+        <div class="controls-container">
+            <div class="filter-container">
+                <label for="filterInput">Filtrar por título:</label>
+                <input type="text" id="filterInput" placeholder="Digite o nome do filme...">
+            </div>
+            
+            <button id="clearTableButton">Limpar Tabela</button>
+        </div>
 
         <table id="moviesTable">
             <thead>

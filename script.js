@@ -3,7 +3,6 @@ function exibirSenha() {
     passwordInput.type = (passwordInput.type === 'password') ? 'text' : 'password';
 }
 
-// Função para login
 document.getElementById('loginForm')?.addEventListener('submit', function(event) {
     event.preventDefault();
     const email = document.getElementById('email').value;
@@ -84,13 +83,12 @@ window.onload = function() {
         });
     }
 
-    // Função para filtrar filmes
     document.getElementById('filterInput')?.addEventListener('input', function() {
         const filterValue = this.value.toLowerCase();
         const rows = moviesTable.getElementsByTagName('tr');
 
         for (let i = 0; i < rows.length; i++) {
-            const titleCell = rows[i].getElementsByTagName('td')[0]; // A primeira coluna é o título
+            const titleCell = rows[i].getElementsByTagName('td')[0];
             if (titleCell) {
                 const titleText = titleCell.textContent || titleCell.innerText;
                 rows[i].style.display = titleText.toLowerCase().includes(filterValue) ? '' : 'none';
